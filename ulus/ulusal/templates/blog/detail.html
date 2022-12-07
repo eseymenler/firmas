@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{{ post.title }} - <a href="{% url 'category' post.category.slug %}">{{ post.category.title }}</a>
+
+
+{% endblock %}

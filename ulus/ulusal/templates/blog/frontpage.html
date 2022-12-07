@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+Front Page
+
+{% for post in posts %}
+<article>
+<li>{{ post.title }} - {{ post.category }}</li>
+<a href="{% url 'detail' post.slug %}">Devamı için tıklayınız</a>
+</article>
+
+{% endfor %}
+
+
+
+{% endblock %}

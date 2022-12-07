@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{{ firmax.title }} - <a href="{% url 'firma-category' firmax.category.slug %}">{{ firmax.category.title }}</a>
+
+
+
+{% endblock %}
